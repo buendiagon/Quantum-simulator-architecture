@@ -1,0 +1,4 @@
+- When generalizing paper claims, preserve the user's preferred writing style where possible; do not make the title overly abstract if the previous title style worked better.
+- Do not remove bibliography entries just because the text was generalized. First check source material and keep references that strengthen the paper's motivation, constraints, and related work without adding unsupported specificity.
+- Avoid repeating generality disclaimers across paper sections. State scope once where it supports the argument, then let the technical contract carry the rest.
+- For this paper, do not frame the architecture around exact-versus-approximate simulation contracts. Focus on preserving the simulator API and full-state semantics while replacing the storage layer with an agnostic compressed backend.

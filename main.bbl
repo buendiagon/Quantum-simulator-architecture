@@ -1,0 +1,51 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{burtscher2009fpc}
+Burtscher, M., Ratanaworabhan, P.: {FPC}: A high-speed compressor for double-precision floating-point data. IEEE Transactions on Computers  \textbf{58}(1),  18--31 (2009). \doi{10.1109/TC.2008.131}
+
+\bibitem{diaz_mdpi_mmss}
+D{\'i}az, G., Steffenel, L., Barrios, C., Couturier, J.: Memory management strategies for software quantum simulators. Quantum Reports  \textbf{7}(3) (2025). \doi{10.3390/quantum7030041}
+
+\bibitem{diaz2024software}
+D{\'i}az, G., Steffenel, L.A., Barrios, C.J., Couturier, J.F.: How to build a software quantum simulator (2024). \doi{10.20944/preprints202409.1497.v1}, \url{https://www.preprints.org/manuscript/202409.1497/v1}
+
+\bibitem{Haner2017}
+H{\"a}ner, T., Steiger, D.S.: 0.5 petabyte simulation of a 45-qubit quantum circuit. In: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (2017). \doi{10.1145/3126908.3126947}
+
+\bibitem{Jones2019}
+Jones, T., Brown, A., Bush, I., Benjamin, S.C.: {QuEST} and high performance simulation of quantum computers. Scientific Reports  \textbf{9},  10736 (2019). \doi{10.1038/s41598-019-47174-9}
+
+\bibitem{lindstrom2006fpzip}
+Lindstrom, P., Isenburg, M.: Fast and efficient compression of floating-point data. IEEE Transactions on Visualization and Computer Graphics  \textbf{12}(5),  1245--1250 (2006). \doi{10.1109/TVCG.2006.143}
+
+\bibitem{Markov2008}
+Markov, I.L., Shi, Y.: Simulating quantum computation by contracting tensor networks. SIAM Journal on Computing  \textbf{38}(3),  963--981 (2008). \doi{10.1137/050644756}
+
+\bibitem{masui2015bitshuffle}
+Masui, K., Amiri, M., Connor, L., Deng, M., Fandino, M., H{\"o}fer, C., Halpern, M., Hanna, D., Hincks, A.D., Hinshaw, G., Parra, J.M., Newburgh, L.B., Shaw, J.R., Vanderlinde, K.: A compression scheme for radio data in high performance computing. Astronomy and Computing  \textbf{12},  181--190 (2015). \doi{10.1016/j.ascom.2015.07.002}
+
+\bibitem{Nielsen2010}
+Nielsen, M.A., Chuang, I.L.: Quantum Computation and Quantum Information. Cambridge University Press, 10th anniversary edition edn. (2010)
+
+\bibitem{Steiger2018}
+Steiger, D.S., H{\"a}ner, T., Troyer, M.: {ProjectQ}: An open source software framework for quantum computing. Quantum  \textbf{2}, ~49 (2018). \doi{10.22331/q-2018-01-31-49}
+
+\bibitem{Vidal2003}
+Vidal, G.: Efficient classical simulation of slightly entangled quantum computations. Physical Review Letters  \textbf{91}(14),  147902 (2003). \doi{10.1103/PhysRevLett.91.147902}
+
+\bibitem{Vinkhuijzen2023}
+Vinkhuijzen, L., Coopmans, T., Elkouss, D., Dunjko, V., Laarman, A.: {LIMDD}: A decision diagram for simulation of quantum computing including stabilizer states. Quantum  \textbf{7}, ~1108 (2023). \doi{10.22331/q-2023-09-11-1108}
+
+\bibitem{wu2018amplitude}
+Wu, X.C., Di, S., Cappello, F., Finkel, H., Alexeev, Y., Chong, F.T.: Amplitude-aware lossy compression for quantum circuit simulation. In: Proceedings of the 4th International Workshop on Data Reduction for Big Scientific Data. IEEE (2018), \url{https://sc18.supercomputing.org/proceedings/workshops/workshop_files/ws_drbsd112s1-file1.pdf}
+
+\bibitem{wu2019full}
+Wu, X.C., Di, S., Dasgupta, E.M., Cappello, F., Finkel, H., Alexeev, Y., Chong, F.T.: Full-state quantum circuit simulation by using data compression. In: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. IEEE/ACM (2019). \doi{10.1145/3295500.3356155}
+
+\bibitem{Zhang2025BMQSim}
+Zhang, B., Fang, B., Ye, F., Guo, L., Tallent, N., Tao, D.: {BMQSim}: Overcoming memory constraints in quantum circuit simulation with a high-fidelity compression framework. In: Proceedings of the 39th ACM International Conference on Supercomputing (2025). \doi{10.1145/3721145.3725747}
+
+\end{thebibliography}

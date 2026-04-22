@@ -1,0 +1,78 @@
+\relax 
+\citation{Nielsen2010}
+\citation{Jones2019,Steiger2018,Haner2017,diaz_mdpi_mmss}
+\@writefile{toc}{\contentsline {title}{Implementable Compressed-Block Storage for Full-State Quantum Circuit Simulation}{1}{}\protected@file@percent }
+\@writefile{toc}{\authcount {3}}
+\@writefile{toc}{\contentsline {author}{Daniel Adri{\'a}n Gonz{\'a}lez Buend{\'i}a \and Pablo Josue Rojas Yepes \and Gilberto Javier D{\'i}az Toro}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\citation{wu2019full,wu2018amplitude,Zhang2025BMQSim}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Execution Model and Backend Contract}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Logical State}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Physical State}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Required Backend Operations}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Backend operations required to execute over compressed blocks.}}{3}{}\protected@file@percent }
+\newlabel{tab:backend-ops}{{1}{3}{}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Compressed-block backend for a full-state simulator. Logical state access remains unchanged at the simulator level; the backend resolves each access through block mapping, dense materialization, and compressed persistence.}}{4}{}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{4}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}State Partition and Block Metadata}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Partitioning the Logical Vector}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Contiguous partition of the logical state vector into independently stored blocks. Each logical amplitude index is routed to one block identifier and one local offset.}}{5}{}\protected@file@percent }
+\newlabel{fig:block-layout}{{2}{5}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Block Descriptor}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Minimal metadata stored for each logical block.}}{6}{}\protected@file@percent }
+\newlabel{tab:block-descriptor}{{2}{6}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Authoritative Representation}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Cache State Machine and Legal Transitions}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}States}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Bounded dense cache for materialized blocks. Reuse is explicit; eviction is allowed only for clean blocks, while dirty blocks must be flushed before their slots can be reclaimed.}}{7}{}\protected@file@percent }
+\newlabel{fig:lru-cache}{{3}{7}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Transitions}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Backend Invariants}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Block Acquisition, Eviction, and Writeback}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}AcquireBlock$(j)$}{8}{}\protected@file@percent }
+\citation{Nielsen2010}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dirty Marking}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}FlushDirty$(S)$}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Gate Planning Over the Block Layout}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Single-Qubit Pair Structure}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Execution Plans}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Intra-block plan.}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Inter-block plan.}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generic multi-block plan.}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Controlled Gates}{10}{}\protected@file@percent }
+\citation{burtscher2009fpc,lindstrom2006fpzip,masui2015bitshuffle}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Two-Qubit and Larger Kernels}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Compression Pipeline and Backing Store}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Per-Block Pipeline}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Backing Store Layout}{11}{}\protected@file@percent }
+\citation{Jones2019,Steiger2018,Haner2017,diaz2024software,diaz_mdpi_mmss}
+\citation{Vidal2003,Markov2008,Vinkhuijzen2023}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Synchronization and State Export}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Synchronization Events}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Correctness Statement}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Implementation Guidance and Design Choices}{12}{}\protected@file@percent }
+\citation{wu2018amplitude,wu2019full,Zhang2025BMQSim}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Primary design parameters and their implementation effect.}}{13}{}\protected@file@percent }
+\newlabel{tab:design-parameters}{{3}{13}{}{table.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Related Work}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Conclusion}{13}{}\protected@file@percent }
+\bibstyle{splncs04}
+\bibdata{references}
+\bibcite{burtscher2009fpc}{1}
+\bibcite{diaz_mdpi_mmss}{2}
+\bibcite{diaz2024software}{3}
+\bibcite{Haner2017}{4}
+\bibcite{Jones2019}{5}
+\bibcite{lindstrom2006fpzip}{6}
+\bibcite{Markov2008}{7}
+\bibcite{masui2015bitshuffle}{8}
+\bibcite{Nielsen2010}{9}
+\@writefile{toc}{\contentsline {subsubsection}{Acknowledgments.}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Disclosure of Interests.}{14}{}\protected@file@percent }
+\bibcite{Steiger2018}{10}
+\bibcite{Vidal2003}{11}
+\bibcite{Vinkhuijzen2023}{12}
+\bibcite{wu2018amplitude}{13}
+\bibcite{wu2019full}{14}
+\bibcite{Zhang2025BMQSim}{15}
+\gdef \@abspage@last{15}
